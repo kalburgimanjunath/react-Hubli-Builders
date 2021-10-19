@@ -1,7 +1,13 @@
 import React from 'react';
 import './style.css';
 import { Header, Footer } from './components/index';
-import { Home, Lawyers, Login } from './pages/index';
+import {
+  Home,
+  Lawyers,
+  Login,
+  Properties,
+  PropertyDetail,
+} from './pages/index';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 export default function App() {
@@ -15,6 +21,12 @@ export default function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/property">
+            <Properties />
+          </Route>
+          <Route path="/propertydetail">
+            <PropertyDetail />
           </Route>
           <Route path="/" exact>
             <Home />

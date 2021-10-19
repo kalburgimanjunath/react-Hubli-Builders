@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 export default function Avatar({ user, type }) {
   // console.log(user);
   return (
@@ -13,7 +14,7 @@ export default function Avatar({ user, type }) {
               <div>{userdata.bio}</div>
             </div>
             {type == 'lawyers' ? (
-              <button type="button">Book a Call</button>
+              <Link to="./propertydetail">View Properties</Link>
             ) : (
               ''
             )}

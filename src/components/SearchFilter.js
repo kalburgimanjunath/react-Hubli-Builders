@@ -1,20 +1,6 @@
 import React from 'react';
 export default function SearchFilter() {
-  const filterOption = [
-    'Mergers & Acquisitions',
-    'Shareholder Agreement',
-    'Patent',
-    'Trading Agreement',
-    'Seed Funding',
-    'Intellectual Property',
-    'Venture Financing',
-    'International Expansion',
-    'Company Entity',
-    'Trademark',
-    'Liability Protection',
-    'Exit Agreement',
-    'Advisory Board',
-  ];
+  const filterOption = ['Seller', 'Reseller', 'Both'];
   const FilterItems = filterOption.map((item) => {
     return <option value={item}>{item}</option>;
   });

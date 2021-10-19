@@ -7,6 +7,7 @@ import Legal from './Legal';
 import Teams from './Teams';
 import Subscribe from './Subscribe';
 import Card from './Card';
+import Property from './Property';
 import SearchFilter from './SearchFilter';
 export {
   Header,
@@ -19,4 +20,5 @@ export {
   Subscribe,
   Card,
   SearchFilter,
+  Property,
 };
